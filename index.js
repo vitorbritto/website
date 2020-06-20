@@ -6,3 +6,4 @@ import './css/header.css';
 import './css/footer.css';
 import './css/menu.css';
 import './css/social.css';
+import './css/responsive.css';

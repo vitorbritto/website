@@ -1,0 +1,25 @@
+@media (max-width: 780px) {
+  .meet__button {
+    padding: 15px;
+    bottom: 45px;
+    right: 20px;
+    left: auto;
+    /* width: 200px; */
+    margin: auto;
+  }
+
+  .meet__label {
+    display: none;
+  }
+
+  .scroll__wrapper {
+    display: none;
+  }
+
+
+  .menu__item-link {
+    margin: 0 10px;
+    font-sizE: 12px;
+  }
+}
+

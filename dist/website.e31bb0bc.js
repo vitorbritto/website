@@ -224,6 +224,11 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/responsive.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
 },{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
@@ -242,7 +247,9 @@ require("./css/footer.css");
 require("./css/menu.css");
 
 require("./css/social.css");
-},{"./css/core.css":"css/core.css","./css/theme.css":"css/theme.css","./css/typography.css":"css/typography.css","./css/icon.css":"css/icon.css","./css/header.css":"css/header.css","./css/footer.css":"css/footer.css","./css/menu.css":"css/menu.css","./css/social.css":"css/social.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+require("./css/responsive.css");
+},{"./css/core.css":"css/core.css","./css/theme.css":"css/theme.css","./css/typography.css":"css/typography.css","./css/icon.css":"css/icon.css","./css/header.css":"css/header.css","./css/footer.css":"css/footer.css","./css/menu.css":"css/menu.css","./css/social.css":"css/social.css","./css/responsive.css":"css/responsive.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

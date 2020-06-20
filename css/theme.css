@@ -1,12 +1,12 @@
 /* GRID */
 .container {
-  /* display: flex; */
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  justify-content: center;
-  padding-left: 20px;
-  padding-right: 20px;
   max-width: 760px;
   margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .row {

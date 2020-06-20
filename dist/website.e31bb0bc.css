@@ -435,13 +435,13 @@ code {
 
 /* GRID */
 .container {
-  /* display: flex; */
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  justify-content: center;
-  padding-left: 20px;
-  padding-right: 20px;
   max-width: 760px;
   margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .row {
@@ -669,7 +669,7 @@ code {
 .icon--calendar { width: 20px; }
 
 .header__wrapper {
-  margin: 75px auto 25px auto;
+  margin: 25px auto;
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -699,7 +699,7 @@ code {
 .menu__list {
   list-style: none;
   padding: 0;
-  margin: 30px 0 0;
+  margin: 30px auto;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -751,6 +751,32 @@ code {
   font-size: var(--font-size-base);
   text-decoration: none;
 }
+
+@media (max-width: 780px) {
+  .meet__button {
+    padding: 15px;
+    bottom: 45px;
+    right: 20px;
+    left: auto;
+    /* width: 200px; */
+    margin: auto;
+  }
+
+  .meet__label {
+    display: none;
+  }
+
+  .scroll__wrapper {
+    display: none;
+  }
+
+
+  .menu__item-link {
+    margin: 0 10px;
+    font-sizE: 12px;
+  }
+}
+
 
 
 /*# sourceMappingURL=/website.e31bb0bc.css.map */
