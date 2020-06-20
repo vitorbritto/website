@@ -1,3 +1,3 @@
 # Vitor Britto
 
- 🚀 My personal website!
+🚀 My personal website!
