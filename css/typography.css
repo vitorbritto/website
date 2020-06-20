@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Montserrat-Black', sans-serif;
+  font-weight: 900;
+  src: url('../fonts/Montserrat-Black.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-weight: 600;
+  src: url('../fonts/Montserrat-Bold.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-weight: 400;
+  src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Georgia Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Georgia Regular'), url('../fonts/georgia.woff') format('woff');
+}

@@ -1,0 +1,31 @@
+.menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex: 1;
+}
+
+.menu__item {
+  margin: 0;
+  padding: 0;
+}
+
+.menu__item-link {
+  transition: opacity .6s;
+  opacity: .8;
+  padding: 2px;
+  margin: 0 15px 5px 15px;
+  color: white;
+  text-transform: uppercase;
+  font-size: var(--font-size-base);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.menu__item-link:hover {
+  opacity: 1;
+  /* border-bottom: 1px solid white; */
+}

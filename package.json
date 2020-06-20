@@ -1,0 +1,25 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "🚀 My personal website!",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel watch index.html",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitorbritto/website.git"
+  },
+  "keywords": [],
+  "author": "Vitor Britto <code@vitorbritto.com.br> (http://vitorbritto.com.br/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitorbritto/website/issues"
+  },
+  "homepage": "https://github.com/vitorbritto/website#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
