@@ -550,6 +550,11 @@ code {
   padding-right: 15px;
 }
 
+/* SKILLS */
+.skill__title {
+  margin: 10px 0 0;
+}
+
 /* ARTICLES */
 /* .articles__list {
   display: flex;
@@ -631,6 +636,7 @@ code {
   opacity: 1;
 }
 
+.icon--next { width: 8px; margin-top: -4px; }
 .icon--twitter,
 .icon--github { width: 20px; }
 .icon--instagram { width: 22px; }

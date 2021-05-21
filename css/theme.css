@@ -125,6 +125,11 @@
   padding-right: 15px;
 }
 
+/* SKILLS */
+.skill__title {
+  margin: 10px 0 0;
+}
+
 /* ARTICLES */
 /* .articles__list {
   display: flex;
