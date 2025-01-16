@@ -606,6 +606,7 @@ var _socialCss = require("./css/social.css");
 var _responsiveCss = require("./css/responsive.css");
 var _bodyCss = require("./css/body.css");
 var _languageSelectorCss = require("./css/language-selector.css");
+var _hamburgerCss = require("./css/hamburger.css");
 var _i18N = require("./i18n");
 window.setLanguage = (0, _i18N.setLanguage);
 const currentLang = (0, _i18N.getCurrentLanguage)();
@@ -686,10 +687,42 @@ function updateTexts() {
     // Atualiza o atributo lang do HTML
     document.documentElement.lang = currentLang;
 }
+// Lógica do menu hamburguer
+function setupMobileMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const menuList = document.querySelector('.menu__list');
+    const menuLinks = document.querySelectorAll('.menu__item-link');
+    if (hamburger && menuList) {
+        hamburger.addEventListener('click', ()=>{
+            hamburger.classList.toggle('is-active');
+            menuList.classList.toggle('is-active');
+        });
+        // Fecha o menu ao clicar em um link
+        menuLinks.forEach((link)=>{
+            link.addEventListener('click', ()=>{
+                hamburger.classList.remove('is-active');
+                menuList.classList.remove('is-active');
+            });
+        });
+        // Fecha o menu ao clicar fora
+        document.addEventListener('click', (event)=>{
+            const target = event.target;
+            const isMenuClick = target.closest('.menu__list');
+            const isHamburgerClick = target.closest('.hamburger');
+            if (!isMenuClick && !isHamburgerClick) {
+                hamburger.classList.remove('is-active');
+                menuList.classList.remove('is-active');
+            }
+        });
+    }
+}
 // Atualiza os textos quando a página carrega
-document.addEventListener('DOMContentLoaded', updateTexts);
+document.addEventListener('DOMContentLoaded', ()=>{
+    updateTexts();
+    setupMobileMenu();
+});
 
-},{"./i18n":"9CWgD","./css/core.css":"a8mD2","./css/theme.css":"kDCbh","./css/icon.css":"gVh8N","./css/header.css":"fEdOe","./css/footer.css":"a58Ll","./css/menu.css":"jB4LN","./css/social.css":"1HNpQ","./css/responsive.css":"2d8mC","./css/language-selector.css":"kYY5R","./css/body.css":"jDcQp"}],"9CWgD":[function(require,module,exports,__globalThis) {
+},{"./i18n":"9CWgD","./css/core.css":"a8mD2","./css/theme.css":"kDCbh","./css/icon.css":"gVh8N","./css/header.css":"fEdOe","./css/footer.css":"a58Ll","./css/menu.css":"jB4LN","./css/social.css":"1HNpQ","./css/responsive.css":"2d8mC","./css/language-selector.css":"kYY5R","./css/body.css":"jDcQp","./css/hamburger.css":"eaUsL"}],"9CWgD":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "translations", ()=>translations);
@@ -751,6 +784,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"a8mD2":[function() {},{}],"kDCbh":[function() {},{}],"gVh8N":[function() {},{}],"fEdOe":[function() {},{}],"a58Ll":[function() {},{}],"jB4LN":[function() {},{}],"1HNpQ":[function() {},{}],"2d8mC":[function() {},{}],"kYY5R":[function() {},{}],"jDcQp":[function() {},{}]},["fHjG8","h7u1C"], "h7u1C", "parcelRequire94c2")
+},{}],"a8mD2":[function() {},{}],"kDCbh":[function() {},{}],"gVh8N":[function() {},{}],"fEdOe":[function() {},{}],"a58Ll":[function() {},{}],"jB4LN":[function() {},{}],"1HNpQ":[function() {},{}],"2d8mC":[function() {},{}],"kYY5R":[function() {},{}],"jDcQp":[function() {},{}],"eaUsL":[function() {},{}]},["fHjG8","h7u1C"], "h7u1C", "parcelRequire94c2")
 
 //# sourceMappingURL=index.b71e74eb.js.map

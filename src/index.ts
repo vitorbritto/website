@@ -8,6 +8,7 @@ import './css/social.css'
 import './css/responsive.css'
 import './css/body.css'
 import './css/language-selector.css'
+import './css/hamburger.css'
 
 import { getCurrentLanguage, getTranslation, setLanguage } from './i18n'
 
@@ -120,5 +121,42 @@ function updateTexts() {
   document.documentElement.lang = currentLang
 }
 
+// Lógica do menu hamburguer
+function setupMobileMenu() {
+  const hamburger = document.querySelector('.hamburger')
+  const menuList = document.querySelector('.menu__list')
+  const menuLinks = document.querySelectorAll('.menu__item-link')
+
+  if (hamburger && menuList) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('is-active')
+      menuList.classList.toggle('is-active')
+    })
+
+    // Fecha o menu ao clicar em um link
+    menuLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('is-active')
+        menuList.classList.remove('is-active')
+      })
+    })
+
+    // Fecha o menu ao clicar fora
+    document.addEventListener('click', (event) => {
+      const target = event.target as HTMLElement
+      const isMenuClick = target.closest('.menu__list')
+      const isHamburgerClick = target.closest('.hamburger')
+
+      if (!isMenuClick && !isHamburgerClick) {
+        hamburger.classList.remove('is-active')
+        menuList.classList.remove('is-active')
+      }
+    })
+  }
+}
+
 // Atualiza os textos quando a página carrega
-document.addEventListener('DOMContentLoaded', updateTexts)
+document.addEventListener('DOMContentLoaded', () => {
+  updateTexts()
+  setupMobileMenu()
+})

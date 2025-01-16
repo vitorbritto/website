@@ -1,31 +1,45 @@
-.menu__list {
-  list-style: none;
-  padding: 0;
-  margin: 30px auto;
+.nav__container {
   display: flex;
+  align-items: center;
   justify-content: center;
-  flex-direction: row;
-  flex: 1;
+  padding: 20px 0;
+  width: 100%;
+  position: relative;
+}
+
+.menu__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
 }
 
 .menu__item {
-  margin: 0;
-  padding: 0;
+  margin: 0 15px;
 }
 
 .menu__item-link {
-  transition: opacity .6s;
-  opacity: .8;
-  padding: 2px;
-  margin: 0 15px 5px 15px;
-  color: white;
-  text-transform: uppercase;
-  font-size: var(--font-size-base);
+  color: var(--color-text, #fff);
   text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s ease;
+  text-transform: uppercase;
   font-weight: 400;
 }
 
 .menu__item-link:hover {
-  opacity: 1;
-  /* border-bottom: 1px solid white; */
+  color: var(--color-primary, #4cf2b9);
 }
+
+/* Ajuste do language-selector em desktop */
+@media (min-width: 769px) {
+  .language-selector {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+/* O resto das media queries será sobrescrito pelo hamburger.css */
