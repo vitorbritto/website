@@ -63,6 +63,14 @@
           </li>
         </ul>
       </nav>
+      <div class="language-selector">
+        <button onclick="window.setLanguage('en')" class="lang-btn">
+          🇺🇸 EN
+        </button>
+        <button onclick="window.setLanguage('pt')" class="lang-btn">
+          🇧🇷 PT
+        </button>
+      </div>
     </div>
 
     <div class="container">
@@ -73,35 +81,23 @@
           <ul class="social__list">
             <li class="social__item">
               <a
-                href="https://twitter.com/vitorbritto"
-                class="social__item-link"
-                target="_blank"
-              >
-                <img
-                  src="images/social-twitter.svg"
-                  class="icon icon--twitter"
-                />
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                href="https://www.instagram.com/vitorbritto/"
-                class="social__item-link"
-                target="_blank"
-              >
-                <img
-                  src="images/social-instagram.svg"
-                  class="icon icon--instagram"
-                />
-              </a>
-            </li>
-            <li class="social__item">
-              <a
                 href="https://github.com/vitorbritto"
                 class="social__item-link"
                 target="_blank"
               >
                 <img src="images/social-github.svg" class="icon icon--github" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="https://www.linkedin.com/in/vitorbritto/"
+                class="social__item-link"
+                target="_blank"
+              >
+                <img
+                  src="images/social-linkedin.svg"
+                  class="icon icon--linkedin"
+                />
               </a>
             </li>
           </ul>
@@ -110,7 +106,9 @@
 
       <div class="row">
         <section class="main__section">
-          <p><strong>Hey, I'm Vitor Britto!</strong></p>
+          <p class="greetings__title">
+            <strong>Hey, I'm Vitor Britto!</strong>
+          </p>
           <p>
             I have more than 15 years of professional experience. Specialist in
             mobile and web application development. Passionate about Javascript
@@ -247,6 +245,6 @@
       </div>
     </footer>
 
-    <script type="module" src="./index.js"></script>
+    <script type="module" src="./index.ts"></script>
   </body>
 </html>

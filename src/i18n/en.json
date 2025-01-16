@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "profile": "Profile",
+    "skills": "Skills",
+    "stack": "Stack",
+    "articles": "Articles"
+  },
+  "intro": {
+    "greeting": "Hey, I'm Vitor Britto!",
+    "description": "I have more than 15 years of professional experience. Specialist in mobile and web application development. Passionate about Javascript and it's technologies. Build and deliver high-quality technical solutions with the ability to draft a clean, tested, maintainable code with readability/documentation in mind.",
+    "linkedin": "Check out my LinkedIn for more information."
+  },
+  "skills": {
+    "title": "Skills",
+    "frontend": {
+      "title": "Front-end",
+      "items": [
+        "I maintain the semantic markup.",
+        "I maintain quality and ensure responsiveness of applications.",
+        "I have experience with Search Engine Optimization.",
+        "I can ensure consistent performance across multiple browsers and platforms.",
+        "I often turn to use preprocessors such as Sass.",
+        "I love PostCSS, and I prefer to develop future-proof CSS.",
+        "JavaScript is my \"native\" programming language. I have worked with it for over 15 years.",
+        "I have strong experience with React, React Native, Next.js and Astro.js."
+      ]
+    },
+    "backend": {
+      "title": "Back-end",
+      "items": [
+        "I build and deliver high-quality technical solutions with the ability to draft a clean, tested, maintainable code with readability/documentation in mind.",
+        "I have strong experience writing production software with object-oriented languages.",
+        "I have strong experience of JavaScript (Node.js, Express.js, Nest.js) on the server-side.",
+        "I have strong experience in GraphQL.",
+        "I design and implement high-performance, scalable, data-centric serverless (cloud) based microservices."
+      ]
+    },
+    "databases": {
+      "title": "Databases",
+      "items": [
+        "I have strong knowledge about data storage design using relational and NoSQL databases, including MySQL, PostgreSQL, MongoDB, Redis, and DynamoDB."
+      ]
+    },
+    "devops": {
+      "title": "DevOps",
+      "items": ["I have solid experience with AWS Services and DevOps."]
+    }
+  },
+  "stack": {
+    "title": "Stack",
+    "description": "You can check my complete tech stack and workflow guide here."
+  },
+  "footer": {
+    "copyright": "© Copyright 2025. Powered with ☕ and ❤️."
+  },
+  "buttons": {
+    "schedule": "Schedule a meeting"
+  }
+}

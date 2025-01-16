@@ -79,7 +79,9 @@ p {
 
 abbr[title], abbr[data-original-title] {
   cursor: help;
+  -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
+  text-decoration: underline;
   border-bottom: 0;
   text-decoration: underline dotted;
 }
@@ -654,46 +656,4 @@ code {
     font-size: 12px;
   }
 }
-
-.language-selector {
-  z-index: 1000;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-}
-
-.lang-btn {
-  cursor: pointer;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin-left: 5px;
-  padding: 5px 10px;
-  transition: all .2s;
-}
-
-.lang-btn:hover {
-  background: #f0f0f0;
-}
-
-.greetings__title {
-  margin-top: 40px;
-  font-size: 1.75rem;
-}
-
-.main__title {
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-.skill__title {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-
-.skill__list {
-  line-height: 1.75;
-}
-/*# sourceMappingURL=index.2212206d.css.map */
+/*# sourceMappingURL=index.fd1de43d.css.map */

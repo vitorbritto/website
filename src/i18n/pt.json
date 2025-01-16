@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "profile": "Perfil",
+    "skills": "Habilidades",
+    "stack": "Stack",
+    "articles": "Artigos"
+  },
+  "intro": {
+    "greeting": "Olá, eu sou Vitor Britto!",
+    "description": "Tenho mais de 15 anos de experiência profissional. Especialista em desenvolvimento de aplicações móveis e web. Apaixonado por Javascript e suas tecnologias. Construo e entrego soluções técnicas de alta qualidade com a capacidade de desenvolver código limpo, testado e sustentável, tendo em mente a legibilidade e documentação.",
+    "linkedin": "Confira meu LinkedIn para mais informações."
+  },
+  "skills": {
+    "title": "Habilidades",
+    "frontend": {
+      "title": "Front-end",
+      "items": [
+        "Mantenho a marcação semântica.",
+        "Mantenho a qualidade e garanto a responsividade das aplicações.",
+        "Tenho experiência com Otimização para Motores de Busca.",
+        "Posso garantir performance consistente em múltiplos navegadores e plataformas.",
+        "Frequentemente uso pré-processadores como Sass.",
+        "Amo PostCSS e prefiro desenvolver CSS à prova do futuro.",
+        "JavaScript é minha linguagem de programação \"nativa\". Trabalho com ela há mais de 15 anos.",
+        "Tenho forte experiência com React, React Native, Next.js e Astro.js."
+      ]
+    },
+    "backend": {
+      "title": "Back-end",
+      "items": [
+        "Construo e entrego soluções técnicas de alta qualidade com a capacidade de desenvolver código limpo, testado e sustentável, tendo em mente a legibilidade e documentação.",
+        "Tenho forte experiência em escrever software de produção com linguagens orientadas a objetos.",
+        "Tenho forte experiência de JavaScript (Node.js, Express.js, Nest.js) no lado do servidor.",
+        "Tenho forte experiência em GraphQL.",
+        "Projeto e implemento microsserviços serverless (cloud) escaláveis e centrados em dados de alta performance."
+      ]
+    },
+    "databases": {
+      "title": "Bancos de Dados",
+      "items": [
+        "Tenho forte conhecimento sobre design de armazenamento de dados usando bancos de dados relacionais e NoSQL, incluindo MySQL, PostgreSQL, MongoDB, Redis e DynamoDB."
+      ]
+    },
+    "devops": {
+      "title": "DevOps",
+      "items": ["Tenho sólida experiência com Serviços AWS e DevOps."]
+    }
+  },
+  "stack": {
+    "title": "Stack",
+    "description": "Você pode conferir meu stack completo e guia de workflow aqui."
+  },
+  "footer": {
+    "copyright": "© Copyright 2025. Feito com ☕ e ❤️."
+  },
+  "buttons": {
+    "schedule": "Agendar reunião"
+  }
+}
