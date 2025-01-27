@@ -10,16 +10,15 @@ import './css/body.css'
 import './css/language-selector.css'
 import './css/hamburger.css'
 
-import { getCurrentLanguage, getTranslation, setLanguage } from './i18n'
+import Lenis from 'lenis'
 
-// Expõe a função setLanguage globalmente
+import { getCurrentLanguage, getTranslation, setLanguage } from './i18n'
 ;(window as any).setLanguage = setLanguage
 
 const currentLang = getCurrentLanguage()
 const t = getTranslation(currentLang)
 
-// Função para atualizar os textos
-function updateTexts() {
+function setupLocales() {
   // Navegação
   document.querySelectorAll('.menu__item-link').forEach((el) => {
     const key = el.textContent?.toLowerCase()
@@ -121,7 +120,6 @@ function updateTexts() {
   document.documentElement.lang = currentLang
 }
 
-// Lógica do menu hamburguer
 function setupMobileMenu() {
   const hamburger = document.querySelector('.hamburger')
   const menuList = document.querySelector('.menu__list')
@@ -155,8 +153,21 @@ function setupMobileMenu() {
   }
 }
 
-// Atualiza os textos quando a página carrega
+function setupSmoothScroller() {
+  const lenis = new Lenis({
+    anchors: true,
+  })
+
+  lenis.start()
+
+  requestAnimationFrame(function raf(time: number) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  })
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-  updateTexts()
+  setupLocales()
   setupMobileMenu()
+  setupSmoothScroller()
 })
