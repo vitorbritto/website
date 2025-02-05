@@ -71,7 +71,7 @@
 }
 
 .meet__button {
-  transition: transform .2s;
+  transition: transform 0.2s;
   display: flex;
   position: fixed;
   bottom: 15px;
@@ -118,7 +118,13 @@
 .avatar {
   width: 120px;
   height: 120px;
-  margin-bottom: 15px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  border-radius: 50%;
+  /* border: 2px solid var(--green-color); */
+  object-fit: cover;
+  object-position: center;
+  /* margin-top: 20px; */
 }
 
 .prefix {
