@@ -3,11 +3,11 @@
     "profile": "Perfil",
     "skills": "Habilidades",
     "stack": "Stack",
-    "articles": "Artigos"
+    "blog": "Blog"
   },
   "intro": {
     "greeting": "Olá, eu sou Vitor Britto!",
-    "description": "Tenho quase 20 anos de experiência profissional. Especialista em desenvolvimento de aplicações móveis e web. Apaixonado por Javascript e suas tecnologias. Construo e entrego soluções técnicas de alta qualidade com a capacidade de desenvolver código limpo, testado e sustentável, tendo em mente a legibilidade e documentação.",
+    "description": "Tenho mais de 15 anos de experiência profissional, com especialização em desenvolvimento de aplicações mobile e web. Sou apaixonado por JavaScript e seu ecossistema. Desenvolvo e entrego soluções técnicas de alta qualidade, escrevendo códigos limpos, testados e de fácil manutenção, com forte foco em legibilidade e documentação.",
     "linkedin": "Confira meu LinkedIn para mais informações."
   },
   "skills": {
@@ -15,30 +15,27 @@
     "frontend": {
       "title": "Front-end",
       "items": [
-        "Mantenho a marcação semântica.",
-        "Mantenho a qualidade e garanto a responsividade das aplicações.",
-        "Tenho experiência com Otimização para Motores de Busca.",
-        "Posso garantir performance consistente em múltiplos navegadores e plataformas.",
-        "Frequentemente uso pré-processadores como Sass.",
-        "Amo PostCSS e prefiro desenvolver CSS à prova do futuro.",
-        "JavaScript é minha linguagem de programação \"nativa\". Trabalho com ela há mais de 15 anos.",
-        "Tenho forte experiência com React, React Native, Next.js e Astro.js."
+        "Tenho forte domínio de marcação semântica, com foco em acessibilidade e experiência do usuário.",
+        "Garanto aplicações responsivas com performance consistente em múltiplos navegadores e dispositivos.",
+        "Tenho experiência prática com técnicas modernas de SEO e otimização de tempo de carregamento.",
+        "Sou adepto de uma arquitetura CSS escalável, utilizando ferramentas como Material UI, Tailwind CSS e Shadcn UI para manter o código limpo, modular e preparado para o futuro.",
+        "JavaScript é minha principal linguagem há mais de 15 anos. Nesse tempo, me especializei no desenvolvimento de aplicações web e mobile modernas usando React, React Native e Next.js.",
+        "Sempre busco entregar soluções técnicas que gerem impacto real no negócio."
       ]
     },
     "backend": {
       "title": "Back-end",
       "items": [
-        "Construo e entrego soluções técnicas de alta qualidade com a capacidade de desenvolver código limpo, testado e sustentável, tendo em mente a legibilidade e documentação.",
-        "Tenho forte experiência em escrever software de produção com linguagens orientadas a objetos.",
-        "Tenho forte experiência de JavaScript (Node.js, Express.js, Nest.js) no lado do servidor.",
-        "Tenho forte experiência em GraphQL.",
-        "Projeto e implemento microsserviços serverless (cloud) escaláveis e centrados em dados de alta performance."
+        "Desenvolvo arquiteturas robustas de back-end com foco em escalabilidade, confiabilidade e manutenção a longo prazo.",
+        "Escrevo software de produção aplicando princípios de orientação a objetos, boas práticas como SOLID e arquitetura limpa.",
+        "Tenho ampla experiência com JavaScript no lado do servidor, utilizando Node.js, Express.js e NestJS para construir APIs e serviços.",
+        "Tenho forte conhecimento em GraphQL, com experiência em design de schemas, otimização de queries e implementação de APIs seguras."
       ]
     },
     "databases": {
       "title": "Bancos de Dados",
       "items": [
-        "Tenho forte conhecimento sobre design de armazenamento de dados usando bancos de dados relacionais e NoSQL, incluindo MySQL, PostgreSQL, MongoDB, Redis e DynamoDB."
+        "Tenho experiência em bancos de dados relacionais e NoSQL, incluindo MySQL, PostgreSQL, MongoDB, Redis, DynamoDB, DocumentDB, entre outros."
       ]
     },
     "devops": {
@@ -48,7 +45,7 @@
   },
   "stack": {
     "title": "Stack",
-    "description": "Você pode conferir meu stack completo e guia de workflow aqui."
+    "description": "Você pode conferir as ferramentas que utilizo aqui."
   },
   "footer": {
     "copyright": "© Copyright 2025. Feito com ☕ e ❤️."

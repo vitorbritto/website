@@ -41,10 +41,7 @@ function setupLocales() {
 
   // Títulos das seções
   document.querySelectorAll('.main__title').forEach((el) => {
-    const key = el.textContent
-      ?.toLowerCase()
-      .replace('🛠 ', '')
-      .replace('🚀 ', '')
+    const key = el.textContent?.toLowerCase().replace('🛠 ', '').replace('🚀 ', '')
     if (key && key in t.skills) {
       const emoji = el.querySelector('.prefix')?.textContent || ''
       el.textContent = emoji + ' ' + t.skills.title
@@ -95,9 +92,7 @@ function setupLocales() {
       if (icon && t.skills[section].items[index]) {
         item.innerHTML = ''
         item.appendChild(icon)
-        item.appendChild(
-          document.createTextNode(' ' + t.skills[section].items[index])
-        )
+        item.appendChild(document.createTextNode(' ' + t.skills[section].items[index]))
       }
     })
   })

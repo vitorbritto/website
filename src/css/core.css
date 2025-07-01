@@ -67,7 +67,7 @@ body {
   color: #ffffff;
   text-align: left;
   margin: 0;
-  background-color: #1a1a1a;
+  background-color: #111;
 }
 
 [tabindex='-1']:focus {
@@ -189,8 +189,9 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
-    'Courier New', monospace;
+  font-family:
+    SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
   font-size: 1rem;
 }
 
@@ -472,7 +473,7 @@ code {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--gray-dark-color, #1a1a1a);
+  background: var(--gray-dark-color, #111);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -487,5 +488,5 @@ code {
 /* Estilo para Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--green-color, #4cf2b9) var(--gray-dark-color, #1a1a1a);
+  scrollbar-color: var(--green-color, #4cf2b9) var(--gray-dark-color, #111);
 }
