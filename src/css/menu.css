@@ -20,7 +20,7 @@
 }
 
 .menu__item-link {
-  color: var(--color-text, #fff);
+  color: var(--gray-light-color);
   text-decoration: none;
   font-size: 16px;
   transition: color 0.2s ease;

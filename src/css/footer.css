@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: #161616;
+  background: var(--gray-dark-color);
   color: #666;
 }
 

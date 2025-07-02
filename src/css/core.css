@@ -2,8 +2,8 @@
 :root {
   --blue-color: #27366a;
   --green-color: #4cf2b9;
-  --gray-dark-color: #333333;
-  --gray-light-color: #a0a0a0;
+  --gray-dark-color: #12171f;
+  --gray-light-color: #c9d1dd;
   --font-size-small: 10px;
   --font-size-base: 14px;
   --font-size-medium: 16px;
@@ -67,7 +67,7 @@ body {
   color: #ffffff;
   text-align: left;
   margin: 0;
-  background-color: #111;
+  background-color: #0d1117;
 }
 
 [tabindex='-1']:focus {
@@ -189,9 +189,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family:
-    SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
-    monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   font-size: 1rem;
 }
 
