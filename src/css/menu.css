@@ -29,17 +29,30 @@
 }
 
 .menu__item-link:hover {
-  color: var(--color-primary, #4cf2b9);
+  color: var(--green-color);
 }
 
-/* Ajuste do language-selector em desktop */
-@media (min-width: 769px) {
-  .language-selector {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+@media (max-width: 780px) {
+  .meet__button {
+    padding: 15px;
+    bottom: 45px;
+    right: 20px;
+    left: auto;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+  }
+
+  .meet__label {
+    display: none;
+  }
+
+  .scroll__wrapper {
+    display: none;
+  }
+
+  .menu__item-link {
+    margin: 0 10px;
+    font-size: 12px;
   }
 }
-
-/* O resto das media queries será sobrescrito pelo hamburger.css */

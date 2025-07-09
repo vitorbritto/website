@@ -5,8 +5,8 @@
   width: 100%;
   max-width: 760px;
   margin: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: calc(var(--spacing) * 2);
+  padding-right: calc(var(--spacing) * 2);
 }
 
 .row {
@@ -24,21 +24,16 @@
 }
 
 .main__section {
-  margin-bottom: 50px;
+  margin-bottom: calc(var(--spacing) * 4);
 }
 
 /* TYPES */
 .main__title {
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-xlg);
   font-family: var(--font-family);
   font-weight: 600;
-  padding-top: 30px;
-  /* padding-bottom: 0px; */
   color: var(--black-color);
   display: flex;
-  /* justify-content: center;
-  align-items: center;
-  margin: auto; */
 }
 
 .lead__title {
@@ -47,7 +42,7 @@
   align-content: center;
   width: 100%;
   margin: 0;
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-xlg);
   font-family: var(--font-family);
   font-weight: 600;
   color: var(--green-color);
@@ -64,26 +59,26 @@
 
 .centered-content {
   text-align: center;
-  color: white;
-  font-size: 48px;
+  color: var(--white-color);
+  font-size: var(--font-size-huge);
   font-weight: 400;
-  margin: 5px 0;
+  margin: var(--spacing) 0;
 }
 
 .meet__button {
   transition: transform 0.2s;
   display: flex;
   position: fixed;
-  bottom: 15px;
-  right: 20px;
+  bottom: calc(var(--spacing) * 2);
+  right: calc(var(--spacing) * 2);
   background-color: var(--green-color);
-  color: black;
+  color: var(--bg-color);
   text-decoration: none;
-  border-radius: 60px;
+  border-radius: var(--radius);
   border: none;
-  padding: 10px 20px;
+  padding: var(--spacing) calc(var(--spacing) * 2);
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: var(--font-size-sm);
   font-weight: bolder;
 }
 
@@ -116,19 +111,17 @@
 }
 
 .avatar {
-  width: 120px;
-  height: 120px;
-  margin-top: 32px;
-  margin-bottom: 16px;
-  border-radius: 50%;
-  /* border: 2px solid var(--green-color); */
+  width: calc(var(--spacing) * 20);
+  height: calc(var(--spacing) * 20);
+  margin-top: calc(var(--spacing) * 4);
+  margin-bottom: calc(var(--spacing) * 2);
+  border-radius: calc(var(--radius) * 20);
   object-fit: cover;
   object-position: center;
-  /* margin-top: 20px; */
 }
 
 .prefix {
-  padding-right: 15px;
+  padding-right: calc(var(--spacing) * 2);
 }
 
 /* SKILLS */
@@ -194,7 +187,7 @@
   flex-wrap: wrap;
   margin: auto;
   font-family: var(--font-family-serif);
-  font-size: var(--font-size-xmedium);
+  font-size: var(--font-size-lg);
   color: var(--gray-dark-color);
 }
 

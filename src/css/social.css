@@ -10,14 +10,14 @@
 }
 
 .social__item {
-  margin-top: 5px;
+  margin-top: var(--spacing);
   padding: 0;
 }
 
 .social__item-link {
-  padding: 8px;
-  color: white;
+  padding: var(--spacing);
+  color: var(--white-color);
   text-transform: uppercase;
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-sm);
   text-decoration: none;
 }

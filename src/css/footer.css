@@ -1,18 +1,15 @@
 .footer__wrapper {
   display: flex;
-  /* margin: 20px auto 0; */
-  margin: auto;
-  padding: 20px;
+  padding: calc(var(--spacing) * 2);
   justify-content: center;
   align-items: center;
   width: 100%;
   background: var(--gray-dark-color);
-  color: #666;
+  color: var(--gray-light-color);
 }
 
 .footer__text {
-  margin: 0 auto;
-  font-size: 11px;
-  text-align: center;
+  margin: auto;
+  font-size: var(--font-size-sm);
   color: var(--green-color);
 }

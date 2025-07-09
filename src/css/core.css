@@ -1,17 +1,20 @@
 /* VARIABLES */
 :root {
+  --white-color: #ffffff;
   --blue-color: #27366a;
   --green-color: #4cf2b9;
+  --gray-color: #6c757d;
   --gray-dark-color: #12171f;
   --gray-light-color: #c9d1dd;
-  --font-size-small: 10px;
-  --font-size-base: 14px;
-  --font-size-medium: 16px;
-  --font-size-xmedium: 21px;
-  --font-size-large: 24px;
-  --font-size-big: 36px;
-  --font-size-bigger: 48px;
-  --font-size-biggest: 56px;
+  --bg-color: #0d1117;
+  --font-size-xs: 11px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 21px;
+  --font-size-xlg: 24px;
+  --font-size-huge: 36px;
+  --font-size-enormous: 48px;
+  --font-size-massive: 56px;
   --header-start-color: rgba(0, 0, 0, 0.5);
   --header-end-color: transparent;
   --font-family: 'JetBrains Mono', serif;
@@ -21,6 +24,8 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
+  --spacing: 8px;
+  --radius: 4px;
 }
 
 *,
@@ -67,7 +72,7 @@ body {
   color: #ffffff;
   text-align: left;
   margin: 0;
-  background-color: #0d1117;
+  background-color: var(--bg-color);
 }
 
 [tabindex='-1']:focus {
@@ -165,7 +170,6 @@ sup {
 }
 
 a {
-  /* text-decoration: none; */
   background-color: transparent;
   color: var(--green-color);
 }
@@ -220,7 +224,7 @@ table {
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  color: #6c757d;
+  color: var(--gray-color);
   text-align: left;
   caption-side: bottom;
 }
@@ -273,6 +277,7 @@ button,
 [type='reset'],
 [type='submit'] {
   -webkit-appearance: button;
+  appearance: button;
 }
 
 button:not(:disabled),
@@ -301,6 +306,7 @@ input[type='time'],
 input[type='datetime-local'],
 input[type='month'] {
   -webkit-appearance: listbox;
+  appearance: listbox;
 }
 
 textarea {
@@ -339,15 +345,18 @@ progress {
 [type='search'] {
   outline-offset: -2px;
   -webkit-appearance: none;
+  appearance: none;
 }
 
 [type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
+  appearance: none;
 }
 
 ::-webkit-file-upload-button {
   font: inherit;
   -webkit-appearance: button;
+  appearance: button;
 }
 
 output {
@@ -413,7 +422,6 @@ p {
 }
 
 /* LISTS */
-
 ul {
   display: block;
   width: 100%;
@@ -465,7 +473,7 @@ code {
   }
 }
 
-/* Estilo para navegadores WebKit (Chrome, Safari, etc) */
+/* WebKit (Chrome, Safari, etc) */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -483,7 +491,7 @@ code {
   background: var(--color-primary-hover, #3ad4a0);
 }
 
-/* Estilo para Firefox */
+/* Firefox */
 * {
   scrollbar-width: thin;
   scrollbar-color: var(--green-color, #4cf2b9) var(--gray-dark-color, #111);

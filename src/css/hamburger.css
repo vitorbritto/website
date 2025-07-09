@@ -14,7 +14,7 @@
   width: 25px;
   height: 3px;
   margin: 5px 0;
-  background-color: #fff;
+  background-color: var(--white-color);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -38,10 +38,10 @@
     top: 60px;
     left: 0;
     right: 0;
-    background-color: var(--color-background, #1a1a1a);
+    background-color: rgba(0, 0, 0, 0.95);
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 var(--radius) var(--radius);
     z-index: 99;
   }
 
@@ -70,19 +70,5 @@
 
   .hamburger.is-active .hamburger__line:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-  }
-
-  /* Ajuste do seletor de idiomas em mobile */
-  .language-selector {
-    position: fixed;
-    top: 10px;
-    right: 20px;
-    margin: 0;
-    padding: 0;
-  }
-
-  .lang-btn {
-    padding: 8px 12px;
-    margin-left: 8px;
   }
 }
