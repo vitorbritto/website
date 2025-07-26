@@ -19,40 +19,45 @@
 /* HEADER */
 .header__wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
   gap: calc(var(--spacing) * 6);
   margin-top: calc(var(--spacing) * 8);
   margin-bottom: calc(var(--spacing) * 8);
 }
 
 .avatar {
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
 }
 
 .lead__content {
-  max-width: 700px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: calc(var(--spacing) * 2);
 }
 
 .lead__title {
-  font-size: calc(var(--font-size-enormous) * 1.2);
+  font-size: var(--font-size-enormous);
   font-family: var(--font-family);
   font-weight: 900;
   color: var(--green-color);
-  line-height: 1;
+  line-height: 0;
 }
 
 .lead__subtitle {
-  font-size: var(--font-size-lg);
+  margin-top: calc(var(--spacing) * 2);
+  margin-bottom: calc(var(--spacing) * 4);
+  font-size: var(--font-size-md);
   font-family: var(--font-family);
-  font-weight: 600;
   color: var(--text-color);
-  /* text-align: center; */
 }
 
 /* MAIN */
@@ -88,45 +93,41 @@
 }
 
 /* LINKS */
-.social__list {
+.menu__list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
   flex: 1;
 }
 
-.social__item {
-  margin-top: var(--spacing);
-  padding: 0;
+.menu__item {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-.social__item-link {
+.menu__item-link {
   color: var(--white-color);
   text-transform: uppercase;
   font-size: var(--font-size-sm);
   text-decoration: none;
-  margin-right: calc(var(--spacing) * 4);
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-right: calc(var(--spacing) * 2);
   gap: var(--spacing);
 }
 
-.social__item-link:hover {
+.menu__item-link:hover {
   color: var(--green-color);
 }
 
-@media (max-width: 1024px) {
-  .scroll__wrapper {
-    display: none;
-  }
-
+@media (max-width: 768px) {
   .header__wrapper {
     flex-direction: column;
     align-items: center;
@@ -139,13 +140,13 @@
     text-align: center;
   }
 
-  .social__list {
+  .menu__list {
     justify-content: center;
     flex-wrap: wrap;
   }
 
-  .social__item-link {
-    margin-right: calc(var(--spacing) * 2);
+  .menu__item-link {
     flex-direction: column;
+    padding: var(--spacing);
   }
 }
