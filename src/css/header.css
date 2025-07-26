@@ -1,8 +1,0 @@
-.header__wrapper {
-  margin: calc(var(--spacing) * 2) auto;
-  padding: calc(var(--spacing) * 2);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-}

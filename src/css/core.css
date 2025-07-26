@@ -1,15 +1,19 @@
 /* VARIABLES */
 :root {
   --white-color: #ffffff;
+  --black-color: #000000;
   --blue-color: #27366a;
   --green-color: #4cf2b9;
+  --color-primary: #4cf2b9;
+  --color-primary-hover: #3ad4a0;
   --gray-color: #6c757d;
   --gray-dark-color: #12171f;
   --gray-light-color: #c9d1dd;
   --bg-color: #0d1117;
+  --text-color: #c1c1cd;
   --font-size-xs: 11px;
   --font-size-sm: 14px;
-  --font-size-md: 16px;
+  --font-size-md: 18px;
   --font-size-lg: 21px;
   --font-size-xlg: 24px;
   --font-size-huge: 36px;
@@ -18,7 +22,7 @@
   --header-start-color: rgba(0, 0, 0, 0.5);
   --header-end-color: transparent;
   --font-family: 'JetBrains Mono', serif;
-  --font-family-serif: 'Georgia Regular', serif;
+  /* --font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; */
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -63,13 +67,11 @@ body {
   -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
   -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
   font-feature-settings: 'kern', 'liga', 'clig', 'calt';
-  font-size: 1rem;
+  font-size: var(--font-size-md);
   font-family: var(--font-family);
-  font-weight: 400;
-  line-height: 1.5;
   word-wrap: break-word;
   font-kerning: normal;
-  color: #ffffff;
+  color: var(--text-color);
   text-align: left;
   margin: 0;
   background-color: var(--bg-color);
@@ -441,6 +443,23 @@ pre {
 code {
   background: #f3f3f3;
   padding: 3px;
+}
+/*
+.icon {
+  transition: opacity 0.6s;
+  opacity: 0.6;
+}
+
+.icon:hover {
+  opacity: 1;
+} */
+
+.icon--github,
+.icon--linkedin,
+.icon--email,
+.icon--work,
+.icon--blog {
+  width: 20px;
 }
 
 .bounce {
