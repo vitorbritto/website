@@ -109,6 +109,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+  padding: var(--spacing) calc(var(--spacing) * 2) var(--spacing) 0;
 }
 
 .menu__item-link {
@@ -119,7 +120,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: calc(var(--spacing) * 2);
   gap: var(--spacing);
 }
 
@@ -143,6 +143,10 @@
   .menu__list {
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .menu__item {
+    padding: 0;
   }
 
   .menu__item-link {
