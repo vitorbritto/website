@@ -17,7 +17,7 @@
 }
 
 /* HEADER */
-.header__wrapper {
+.header-wrapper {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -35,7 +35,7 @@
   object-position: center;
 }
 
-.lead__content {
+.lead-wrapper {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -44,7 +44,7 @@
   margin-top: calc(var(--spacing) * 2);
 }
 
-.lead__title {
+.lead-title {
   font-size: var(--font-size-enormous);
   font-family: var(--font-family);
   font-weight: 900;
@@ -52,7 +52,7 @@
   line-height: 0;
 }
 
-.lead__subtitle {
+.lead-subtitle {
   margin-top: calc(var(--spacing) * 2);
   font-size: var(--font-size-md);
   font-family: var(--font-family);
@@ -60,11 +60,11 @@
 }
 
 /* MAIN */
-.main__section {
+.main-section {
   margin-bottom: calc(var(--spacing) * 4);
 }
 
-.main__title {
+.main-title {
   font-size: var(--font-size-xlg);
   font-family: var(--font-family);
   font-weight: 600;
@@ -72,13 +72,14 @@
   display: flex;
 }
 
-.scroll__wrapper {
+/* SCROLL */
+.scroll-wrapper {
   position: fixed;
   bottom: -35px;
   right: 20px;
 }
 
-.scroll__content {
+.scroll-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,7 +93,7 @@
 }
 
 /* LINKS */
-.menu__list {
+.menu-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -103,7 +104,7 @@
   flex: 1;
 }
 
-.menu__item {
+.menu-item {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -111,7 +112,7 @@
   padding: var(--spacing) calc(var(--spacing) * 2) var(--spacing) 0;
 }
 
-.menu__item-link {
+.menu-item-link {
   color: var(--white-color);
   text-transform: uppercase;
   font-size: var(--font-size-sm);
@@ -122,37 +123,46 @@
   gap: var(--spacing);
 }
 
-.menu__item-link:hover {
+.menu-item-link:hover {
   color: var(--green-color);
 }
 
+/* ICONS */
+.icon-github,
+.icon-linkedin,
+.icon-email,
+.icon-work,
+.icon-blog {
+  width: 20px;
+}
+
 @media (max-width: 768px) {
-  .header__wrapper {
+  .header-wrapper {
     flex-direction: column;
     align-items: center;
     gap: calc(var(--spacing));
     flex: 1;
   }
 
-  .lead__content {
+  .lead-content {
     max-width: 100%;
     text-align: center;
   }
 
-  .lead__subtitle {
+  .lead-subtitle {
     margin-bottom: calc(var(--spacing) * 6);
   }
 
-  .menu__list {
+  .menu-list {
     justify-content: center;
     flex-wrap: wrap;
   }
 
-  .menu__item {
+  .menu-item {
     padding: 0;
   }
 
-  .menu__item-link {
+  .menu-item-link {
     flex-direction: column;
     padding: var(--spacing);
   }

@@ -444,24 +444,8 @@ code {
   background: #f3f3f3;
   padding: 3px;
 }
-/*
-.icon {
-  transition: opacity 0.6s;
-  opacity: 0.6;
-}
 
-.icon:hover {
-  opacity: 1;
-} */
-
-.icon--github,
-.icon--linkedin,
-.icon--email,
-.icon--work,
-.icon--blog {
-  width: 20px;
-}
-
+/* ANIMATIONS */
 .bounce {
   -moz-animation: pingpong 1s infinite;
   -webkit-animation: pingpong 1s infinite;
@@ -492,7 +476,7 @@ code {
   }
 }
 
-/* WebKit (Chrome, Safari, etc) */
+/* SCROLLBAR */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -510,7 +494,6 @@ code {
   background: var(--color-primary-hover, #3ad4a0);
 }
 
-/* Firefox */
 * {
   scrollbar-width: thin;
   scrollbar-color: var(--green-color, #4cf2b9) var(--gray-dark-color, #111);
